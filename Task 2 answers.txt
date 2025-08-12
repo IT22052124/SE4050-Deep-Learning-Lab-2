@@ -1,13 +1,5 @@
 1. What happens when the number of hidden nodes increases?
-With very few hidden nodes (e.g., 1–3), the model is underfitting — accuracy is low, and the decision boundary is too simple.
-
-As hidden nodes increase (e.g., 5–20), the accuracy improves — the model can capture more complex patterns.
-
-Beyond a certain number (e.g., 50+), accuracy may not improve much or may fluctuate due to overfitting or training instability.
+When the number of hidden nodes in the neural network increases, the model generally becomes better at learning complex patterns in the data. With a very small number of hidden nodes, such as 1 to 3, the network tends to underfit, resulting in low accuracy and overly simple decision boundaries. Increasing the hidden layer size to a moderate range, around 5 to 20 nodes, usually improves accuracy significantly, as the model can represent more complex and non-linear relationships. However, beyond a certain point, such as 50 or more nodes, the accuracy often shows little to no improvement, and in some cases, the model may overfit, especially when working with smaller datasets.
 
 2. Pattern of the accuracy change
-Accuracy tends to increase rapidly with hidden size up to a certain point.
-
-After a certain hidden size, the accuracy plateaus — extra nodes don’t help much.
-
-If the dataset is small, too many hidden nodes can lead to overfitting — the model memorizes training data but may not generalize.
+The accuracy typically increases rapidly as the number of hidden nodes grows from very small to moderate values, since the network gains more capacity to capture patterns in the data. Once the hidden layer size reaches a sufficient level to model the underlying patterns, the accuracy tends to plateau, meaning additional nodes do not significantly boost performance. In some cases, adding too many hidden nodes can even hurt generalization, as the model starts memorizing the training data instead of learning features that work well on unseen data.
